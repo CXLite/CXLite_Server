@@ -1,0 +1,10 @@
+requests~=2.32.3
+pyaes~=1.6.1
+beautifulsoup4~=4.12.3
+loguru~=0.7.2
+fonttools
+pyjnius
+fastapi
+uvicorn
+urllib3~=2.2.3
+python-osc~=1.9.0

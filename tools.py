@@ -22,7 +22,7 @@ def get_android_python_activity():
 
 
 def get_task_service():
-    return autoclass('io.github.user2061360308.chaoxinglite.ServiceTask_service')
+    return autoclass('io.github.user2061360308.cxlite.ServiceTask_service')
 
 
 def raise_error(error):

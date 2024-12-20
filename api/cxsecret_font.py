@@ -10,10 +10,12 @@ from io import BytesIO
 from pathlib import Path
 from typing import IO, Union, Dict
 
-# Todo: 由于fontTools库的问题，暂时无法使用
 # from fontTools.ttLib.tables._g_l_y_f import Glyph, table__g_l_y_f
 # from fontTools.ttLib.ttFont import TTFont
+
+TTFont = None
 Glyph = None
+table__g_l_y_f = None
 
 # 康熙部首替换表
 KX_RADICALS_TAB = str.maketrans(

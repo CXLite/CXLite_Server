@@ -12,7 +12,7 @@ class FontDecoder:
     
     def __decode_init(self, html_content):
         if html_content:
-            soup = BeautifulSoup(html_content, "lxml")
+            soup = BeautifulSoup(html_content)
             style_tag = soup.find("style",id="cxSecretStyle")
             match = re.search(r'base64,([\w\W]+?)\'', style_tag.text)
             self.__font_hash_map = cxfont.font2map('data:application/font-ttf;charset=utf-8;base64,'+match.group(1))

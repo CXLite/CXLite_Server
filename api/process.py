@@ -1,7 +1,5 @@
 import time
-from api.logger import logger
 from api.config import GlobalConst as gc
-
 
 def sec2time(sec: int):
     h = int(sec / 3600)
@@ -23,5 +21,4 @@ def show_progress(name: str, start: int, span: int, total: int, _speed: float):
         progress = ("#" * length).ljust(40, " ")
         # remain = (total - current)
         print(f"\r当前任务: {name} |{progress}| {percent}%  {sec2time(current)}/{sec2time(total)}", end="", flush=True)
-        logger.info(f"当前任务: {name} |{progress}| {percent}%  {sec2time(current)}/{sec2time(total)}")
         time.sleep(gc.THRESHOLD)
